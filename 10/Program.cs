@@ -6,9 +6,7 @@
 
 bool numIsCorrect(int number)
 {
-    int quotient = number/100;
-
-    bool result = (quotient != 0) & (quotient < 10);
+    bool result = (number > 99) & (number < 1000);
     return result;
 }
 
